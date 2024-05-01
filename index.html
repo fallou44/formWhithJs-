@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Jour1</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Inscription</h1>
+
+        <form action="">
+            <div class="form-row">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom">
+                <span class="error" id="error-nom">Le champ nom est requis et doit contenir entre 5 et 30 caractères</span>
+            </div>
+            <div class="form-row">
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom">
+                <span class="error" id="error-prenom">Le champ prénom est requis et doit contenir entre 5 et 30 caractères</span>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <span class="error" id="error-email">Le champ email est requis et doit être valide</span>
+            </div>
+            <div class="form-row">
+                <label for="password">Mot de passe</label>
+                <div style="width: 100%; position: relative;">
+                    <input type="password" name="password" id="password">
+                    <span class="toggle-password"><i class="fa-solid fa-eye"></i></span>
+                </div>
+                <span class="error" id="error-password">Le champ mot de passe est requis et doit contenir entre 8 et 50 caractères</span>
+            </div>
+            <div class="form-row">
+                <label for="password2">Confirmation</label>
+                <div style="width: 100%; position: relative;">
+                    <input type="password" name="password2" id="password2">
+                    <span class="toggle-password"><i class="fa-solid fa-eye"></i></span>
+                </div>
+                <span class="error" id="error-password2">Le mot de passe doit être identique</span>
+            </div>
+            <div class="form-row">
+                <input type="button" id="btn" value="Envoyer"/>
+            </div>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
